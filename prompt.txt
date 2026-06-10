@@ -1,0 +1,39 @@
+1. How to make menu driven program in C
+
+2. How to create 2D array in C
+
+3. How to fill 2D array with underscore symbol
+
+4. How to print 2D array on console screen
+
+5. Taking row and column input using scanf
+
+6. How to use nested for loops in graphics program
+
+7. How to make separate functions in C program
+
+8. Rectangle drawing program using * in C
+
+9. How to draw line in character array
+
+10. Triangle pattern using loops in C
+
+11. Circle drawing using sin and cos in C
+
+12. How to erase shapes from 2D array
+
+13. Program to clear complete screen buffer
+
+14. How to use switch case for menu options
+
+15. Using do while loop for repeating menu
+
+16. Fixing undeclared variable error in C
+
+17. Fixing syntax errors in C program
+
+18. How to display current drawing screen
+
+19. How to draw shapes using arrays and functions in C
+
+20. Console graphics editor mini project in C
