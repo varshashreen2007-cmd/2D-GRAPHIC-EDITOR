@@ -25,4 +25,27 @@ void renderScreen()
      }
      printf("\n");
    }
+}
+void placeRectangle(int startRow,int startCol,int h,int w,char drawChar)
+{
+   int i;
+   for(i=startCol;i< startCol + w; i++)
+   {
+      screenBuffer[startRow][i]=drawChar;
+      screenBuffer[startRow + h-1][i]= drawChar;
+   }
+   for(i=startRow; i < startRow + h; i++)
+   {
+      screenBuffer[i][startCol]=drawChar;
+      screenBuffer[i][sttartCol+ w-1]=drawChar;
+   }
+}
+void placeHorizontalLine(int TargetRow, int leftCol, int rightCol,char drawChar)
+{
+   int idx;
+   for(idx = leftCol; idx <= rightCol; idx++)
+   {
+      screenBuffer[TargetRow][idx] = drawChar;
+   }
+
 
