@@ -53,6 +53,27 @@ void placeTriangle(int topR,int centerC, int height,char drawChar)
    int i;
    for(i=0;i< height;i++)
    {  
+      screenBuffer[topR + i][centerC-i]=drawChar;
+      screenBuffer[topR + i][centerC+i]=drawChar;
+   }
+   for(i=centerC-height+1;i<=centerC + height - 1;i++)
+   {
+     screenBuffer[topR +height - 1][i]=drawChar;
+   }
+}
+void placeCircle(int centerX,int centerY,int radius,char drawChar)
+{
+   int deg;
+   for(deg=0; deg<360; deg++)
+   {
+      int targetX=centerX+radius*cos(deg*3.14159/180);
+      int targetY=centerY+radius*sin(deg*3.14159/180);
+      if(targetX>=0 && targetX<MAX_ROWS && targetY>=0 && targetY<MAX_COLS)
+      {
+         screenBuffer[targetX][targetY]=drawChar;
+      }
+   }
+}
 
 
 
