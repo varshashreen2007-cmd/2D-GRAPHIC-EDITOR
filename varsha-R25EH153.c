@@ -1,14 +1,14 @@
 #include<stdio.h>
 #include<math.h>
 #define MAX_ROWS 25
-#define MAX_COLS60
+#define MAX_COLS 60
 char screenBuffer[MAX_ROWS][MAX_COLS];
 void resetScreen()
 {
    int rowIdx,colIdx;
    for(rowIdx=0; rowIdx < MAX_ROWS; rowIdx++)
    {
-      for(colIdx=0; colIdx <MAX-COLS; colIdx++)
+      for(colIdx=0; colIdx <MAX_COLS; colIdx++)
       {
          screenBuffer[rowIdx][colIdx]='_';
       }
@@ -37,7 +37,7 @@ void placeRectangle(int startRow,int startCol,int h,int w,char drawChar)
    for(i=startRow; i < startRow + h; i++)
    {
       screenBuffer[i][startCol]=drawChar;
-      screenBuffer[i][sttartCol+ w-1]=drawChar;
+      screenBuffer[i][startCol+ w-1]=drawChar;
    }
 }
 void placeHorizontalLine(int TargetRow, int leftCol, int rightCol,char drawChar)
@@ -138,7 +138,7 @@ case 6:
 {
   int r,cStart,cEnd;
   printf("Enter Row,Start Column,End Column to Erase:");
-  scanf('%d%d%d",&r,&cStart,&cEnd);
+  scanf("%d%d%d",&r,&cStart,&cEnd);
   placeHorizontalLine(r,cStart,cEnd,'_');
   break;
 }
