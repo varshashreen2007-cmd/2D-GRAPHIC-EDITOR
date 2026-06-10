@@ -93,4 +93,69 @@ int main()
    printf("Provide Option:");
    scanf("%d",&userSelection);
 switch(userSelection)
+{
+  case 1:
+  {
+    int r,c,h,w;
+    printf("Enter Row,Col,Height,Width:");
+    scanf("%d%d%d%d",&r,&c,&h,&w);
+    placeRectangle(r,c,h,w,'*');
+    break;
+  }
+  case 2:
+  {
+   int r,cStart,cEnd;
+   printf("Enter Row,start Column,End Column:");
+   scanf("%d%d%d",&r,&cStart,&cEnd);
+   placeHorizontalLine(r,cStart,cEnd,'*');
+   break;
+  }
+  case 3:
+  {
+   int r,c,h;
+   printf("Enter Top Row,Center Column,Height:");
+   scanf("%d%d%d",&r,&c,&h);
+   placeTriangle(r,c,h,'*');
+   break;
+  }
+  case 4:
+ {
+  int x,y,rad;
+  printf("Enter Center Row,Center Column,Radius:");
+  scanf("%d%d%d",&x,&y,&rad);
+  placeCircle(x,y,rad,'*');
+  break;
+ }
+case 5:
+{
+   int r,c,h,w;
+   printf("Enter Row,Col,Height,Width to Erase:");
+   scanf("%d%d%d%d",&r,&c,&h,&w);
+   placeRectangle(r,c,h,w,'_');
+   break;
+}
+case 6:
+{
+  int r,cStart,cEnd;
+  printf("Enter Row,Start Column,End Column to Erase:");
+  scanf('%d%d%d",&r,&cStart,&cEnd);
+  placeHorizontalLine(r,cStart,cEnd,'_');
+  break;
+}
+case 7:
+   renderScreen();
+   break;
+case 8:
+   resetScreen();
+   printf("Screen has been completely wiped!\n");
+   break;
+case 9:
+   printf("Shutting down...Goodbye.\n");
+   break;
+default:
+   printf("Error:Invalid Option Chosen!\n");
+}
+  }while(userSelection!=9);
+  return 0;
+}
 
