@@ -47,5 +47,12 @@ void placeHorizontalLine(int TargetRow, int leftCol, int rightCol,char drawChar)
    {
       screenBuffer[TargetRow][idx] = drawChar;
    }
+}
+void placeTriangle(int topR,int centerC, int height,char drawChar)
+{
+   int i;
+   for(i=0;i< height;i++)
+   {  
+
 
 
