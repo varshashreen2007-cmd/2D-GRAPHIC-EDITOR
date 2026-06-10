@@ -1,2 +1,9 @@
-# 2D-GRAPHIC-EDITOR
-A menu-driven 2D graphics editor developed in C using a 2D character array. The project allows users to draw, modify, and delete shapes like rectangles, circles ,lines , and triangles on a text-based canvas using '*' characters.
+Design and implement a menu-driven 2D Graphics Editor in C using a 2D character array as the drawing canvas. The canvas should initially be filled with the character _ (underscore), and graphical objects should be drawn using the character * (asterisk).
+
+1.Write functions to draw a circle, rectangle, line, and triangle.
+2.You should be able to
+      add objects to the picture,
+      delete objects from the picture, and
+       modify objects in the picture.
+3.Use a 2d array of characters to store the picture.
+4.Write a function to display the picture.
