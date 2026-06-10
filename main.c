@@ -74,6 +74,23 @@ void placeCircle(int centerX,int centerY,int radius,char drawChar)
       }
    }
 }
-
-
+int main()
+{
+   int userSelection;
+   resetScreen();
+   do
+  {
+   printf("\n=====CONSOLE GRAPHICS SYSTEM=====\n");
+   printf("1.Construct Rectangle\n");
+   printf("2.Construct Line\n");
+   printf("3.Construct Triangle\n");
+   printf("4.Construct Circle\n");
+   printf("5.Erase Rectangle\n");
+   printf("6.Erase Line\n");
+   printf("7.Output Current Screen\n");
+   printf("8.Wipe Screen Clean\n");
+   printf("9.Terminate Program\n");
+   printf("Provide Option:");
+   scanf("%d",&userSelection);
+switch(userSelection)
 
